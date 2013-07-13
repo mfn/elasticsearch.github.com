@@ -31,6 +31,8 @@ p. Both examples above do the same thing, which is count the number of tweets fr
 
 p. The query is optional, and when not provided, it will use @match_all@ to count all the docs.
 
+p(note). Note: in contrast to "Search":/guide/reference/api/search the query being sent in the body must not be nested in a @query@  key.
+
 h1. Multiple Indices and Types
 
 p. The count API can be applied to multiple types within an index, and across multiple indices. For example, we can count all documents across all types that match a @user@ field with value @kimchy@:
